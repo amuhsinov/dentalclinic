@@ -1,0 +1,111 @@
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: Comic Sans MS; color: #58595b; }
+
+a { text-decoration: none; }
+
+html { font-size: 16px; }
+
+section:not(:first-child) { padding: 100px 30px; }
+section:nth-child(even) { background: #e6e6e6; }
+
+.section-main { width: 100%; height: 100vh; background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../images/smile.jpg); background-size: cover; background-position: center; }
+
+.container {  max-width: 1200px; margin: 0 auto; }
+
+header {  }
+header:after { content: ''; display: block; clear: both; }
+
+.fixed { position: fixed;  top: 0; max-width: inherit; }
+
+.grey-background { background-color: #e6e6e6; transition: background-color 500ms linear; }
+
+.header-container { width: 100%; padding-top: 30px; }
+.header-logo { float: left; }
+
+.header-nav { float: right; margin: 50px 0; }
+.nav {  }
+.nav li { list-style: none;  float: left; margin-left: 20px; }
+.nav a { font-size: 24px;  font-weight: bold; }
+.nav a:hover { border-bottom: 5px solid; border-color: #42b4b0; transition: border-bottom 0.3s, border-color 0.3s; }
+.vertical-nav { position: relative; }
+.list-icon { display: none; width: 42px; position: absolute; right: 0;}
+.nav-list a { display: block; font-size: 20px;  font-weight: bold; }
+
+.row { width: 100%; }
+.row:after { content: ''; display: block; clear: both; }
+
+.appointment-box { max-width: 800px; background-color: white; margin: 0 auto; border-radius: 10px; }
+.appointment-option { float: left; width: 50%; font-size: 28px; text-align: center; }
+.appointment-option + .appointment-option { border-left: 2px solid; }
+.appointment-option a:hover { border-bottom: 5px solid; border-color: #42b4b0; transition: border-bottom 0.3s, border-color 0.3s; }
+.appointment-header { text-align: center; font-size: 32px; }
+.appointment-text-fields { font-size: 20px; display: inline-block; }
+
+.half-row { width: 50%; float: left; padding: 15px; }
+.half-row input, select { float: right; width: 50%; }
+
+.div-input-submit { text-align: center; padding: 15px; }
+.div-input-submit input { font-size: 20px; padding: 5px; }
+
+.header-text { font-size: 38px; text-align: center; padding-bottom: 30px; }
+.center-container { width: 100%; text-align: center; }
+.center-container:after { content: ''; display: block; clear: both; }
+
+/* About us */
+.section-about-us { }
+.clinic { width: 50%; float: left; border-radius: 15px; }
+.text-about-us { width: 50%; float: left; padding: 0 50px; font-size: 22px; }
+
+/* Services */
+.section-services {  }
+.text-header-service { font-weight: bold; }
+.img-150 { width: 150px; border-radius: 50%; }
+.col-33 { width: 33%; display: inline-block; padding: 10px; vertical-align: text-top; }
+.col-50 { width: 50%; float: left; padding: 15px; }
+
+/* Team */
+.section-team {  }
+.team { width: 100%; text-align: center; }
+.team:after { content: ''; display: block; clear: both; }
+
+/* Contact */
+.contact-text { font-size: 20px; font-style: italic; }
+
+/* Appointment */
+.section-appointment { width: 100%; }
+
+.alert-text { color: #bf2640; }
+.grey {	color: #58595b; }
+.green { color: #42b4b0; }
+.hide {	display: none; }
+
+@media only screen and (max-width: 1024px) {
+	.clinic, .text-about-us { width: 100%; }
+
+	.center-container { padding: 0 10%; }
+}
+
+@media only screen and (max-width: 736px) {
+	.col-33 { width: 100%; }
+
+	.half-row { width: 100%; }
+
+	.text-about-us { padding: 0; }
+
+	.nav { display: none; }
+
+	.list-icon { display: block; }
+
+	.header-nav { padding-right: 15px; }
+
+	.section-contact .col-50 { width: 100%; }
+
+	.logo { height: 100px; }
+
+	.header-container { padding-top: 0; }
+
+	.header-nav { margin: 30px 0; }
+}
+
+@media only screen and (max-width: 564px) {
+	.text-about-us { font-size: 18px; }
+}
